@@ -43,3 +43,58 @@ import keyword
 
 print(keyword.kwlist)
 
+#파이 썬이 제공하는 내장함수 : 기본적으로 제공됨
+#별도로 import 선언하지 않고 바로 사용함
+# max, min, type, len, range,str,int,float,print,input 등
+
+# type(값 또는 변수명) : 값의 자료형을 리턴
+a = 12
+b = 'text'
+c = 1+4j
+print(type(a),type(b),type(c))
+
+#len(값 또는 변수) : 길이(저장된 값의 갯수) 리턴
+d = 'abcd'
+e = [1,2,3,4,5]
+
+print(len(d),len(e))
+
+# max(값들 또는 변수) : 최대값(가장 큰 값) , min(값들 또는 변수) :  최소값(가장 작은 값)
+
+print(max('abcdefgh'))
+print(max('123456789'))
+print(min('abcdefgh'))
+print(min('123456789'))
+
+# 주석(comment)
+# 한줄 주석
+'''
+여러줄 주석
+작은 또는 큰 따옴표를 앞뒤로 3개씩 표시함
+파이썬에서는 single quotation 과 double quotation 은 동일하게 취급됨
+'''
+
+print(abs(-10))
+
+# 파이썬에서 변수는 반드시 값을 가져야 생성됨
+#num
+#print(num)
+
+num = 12
+print(num)
+
+#파이썬에서는 변수에 기록할 값의 종류(data type : 자료형)을 정하지 않음
+#자료형 변수명 = 기록할값 = > 변수명 = 기록할값
+# 변수방에 기록되는 값에 따라 자료형이 정해짐 : 동적할당
+
+value = 100
+print(value,type(value))
+value = 'python'
+print(value,type(value))
+value = 3.14
+print(value,type(value))
+value = False
+print(value,type(value))
+
+del value
+#print(value,type(value))
