@@ -94,3 +94,14 @@ print(len(dir(str)))
 
 # 문자열에 포멧(format)을 적용하여 코드 작성하는 방법
 # 문자열 값 사이에 다른 종류의 값이나 변수를 적용하려고 할때 이용
+amount = int(input('갯수 입력 : '))
+st = '사과를 %d개 주문함' %amount
+print(st)
+
+#정수 10진수 (decimal) : %d
+#문자열(string) : %s
+#실수형 숫자(float) : %f
+product_name = input('주문할 상품명 :')
+price = int(input('제품의 단가 :'))
+st2 = '상품명은 %s 이고, 기본 단가는 %d 원이다.' %(product_name,price)
+print(st2)
